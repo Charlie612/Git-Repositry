@@ -27,6 +27,7 @@ form {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid red;
+  border-radius: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
