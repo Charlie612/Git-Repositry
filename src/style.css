@@ -80,3 +80,7 @@ form {
   background: white;
   color: blue;
 }
+
+#source-code-link {
+  text-align: center;
+}
