@@ -9,9 +9,9 @@ h1 {
 
 h3 {
   text-align: center;
-  color: blue;
+  color: white;
   padding: 0 0 10px 0;
-  text-shadow: 5px 5px 10px white;
+  text-shadow: 5px 5px 10px blue;
 }
 
 form {
