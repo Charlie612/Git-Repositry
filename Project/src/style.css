@@ -1,0 +1,71 @@
+body {
+  background-image: url("../images/sunnyintervals.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 10px;
+  text-shadow: 5px 5px 10px blue;
+  font-weight: bolder;
+}
+
+h3 {
+  text-align: center;
+  color: blue;
+  padding: 0 0 10px 0;
+  text-shadow: 5px 5px 10px white;
+}
+
+form {
+  text-align: center;
+}
+
+.background-image {
+  font-family: "Merriweather", serif;
+}
+
+.currentWeather {
+  background-color: white;
+  text-align: center;
+  border: 10px solid blue;
+  box-shadow: 3px 3px 3px rgb(0 0 255 / 40%);
+  border-radius: 50px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.temperature {
+  font-size: 75px;
+}
+
+.scale {
+  font-size: 30px;
+  position: relative;
+  bottom: 20px;
+  text-decoration: none;
+}
+
+.current-weather-emoji {
+  font-size: 75px;
+  position: relative;
+  top: 10px;
+}
+
+#weekly-forecast {
+  font-size: 30px;
+}
+#daily-forecast {
+  background-color: white;
+  border: 2px solid blue;
+  border-radius: 30px;
+  margin: 30px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 3px 3px 3px rgb(0, 0, 255, 0.4);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plus Homework Week 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-image">
+        <h1>London</h1>
+        <h3 id="date-and-time">
+          Sun 15th May </br> 18:00
+        </h3>
+        <div class="currentWeather">
+          <span class="current-weather-emoji">⛅️ </span>
+          <span class="temperature" id="temperature">5</span>
+          <span><a href="#" class="scale" id="degrees-celsius">˚C </a></span>
+            <span class="scale">|</span>
+              <span><a href="#" class="scale" id="fahrenheit"> ˚F</a></span>
+          <div class="humidity">Humidity: 25%</div>
+          <div class="wind">Wind: 2mph</div>
+          <br />
+        </div>
+        <br />
+        <div class="row" id="weekly-forecast">
+          <div class="col" id="daily-forecast">
+            <div>Mon</div>
+            <div>🌥</div>
+            <div>10˚</div>
+          </div>
+          <div class="col" id="daily-forecast">
+            <div>Tues</div>
+            <div>🌧</div>
+            <div>9˚</div>
+          </div>
+          <div class="col" id="daily-forecast">
+            <div>Weds</div>
+            <div>⛅️</div>
+            <div>11˚</div>
+          </div>
+          <div class="col" id="daily-forecast">
+            <div>Thurs</div>
+            <div>☁️</div>
+            <div>10˚</div>
+          </div>
+          <div class="col" id="daily-forecast">
+            <div>Fri</div>
+            <div>⛅️</div>
+            <div>11˚</div>
+          </div>
+        </div>
+        <br />
+        <form id="city-form">
+          <input type="text" placeholder="Search for a city" autofocus="on" id="city-search" />
+          <button type="submit" value="search" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+      <script src="src/javascript.js"></script>
+    </div>
+  </body>
+</html>
