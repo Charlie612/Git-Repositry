@@ -23,10 +23,10 @@ form {
 }
 
 #outside-border {
-  background-image: url("../images/sunnyintervals.jpg");
+  background-image: url("../images/sunnyintervalsv0.2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border: 5px solid red;
+  border: 5px solid blue;
   border-radius: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
