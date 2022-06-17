@@ -29,7 +29,7 @@ form {
   border: 5px solid blue;
   border-radius: 30px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .currentWeather {
@@ -87,5 +87,5 @@ form {
 
 #source-code-link {
   text-align: center;
-  padding: 5px;
+  margin-bottom: 10px;
 }
