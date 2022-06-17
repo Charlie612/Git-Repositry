@@ -1,9 +1,3 @@
-body {
-  background-image: url("../images/sunnyintervals.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 h1 {
   color: white;
   text-align: center;
@@ -26,6 +20,15 @@ form {
 
 .background-image {
   font-family: "Merriweather", serif;
+}
+
+#outside-border {
+  background-image: url("../images/sunnyintervals.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid red;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .currentWeather {
