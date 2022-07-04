@@ -87,6 +87,14 @@ function showTemperature(response) {
   console.log(currentHumidity);
   let displayCurrentHumidity = document.querySelector("#humidity");
   displayCurrentHumidity.innerHTML = `Humidity: ${currentHumidity}%`;
+  let currentWind = Math.round(response.data.wind.speed);
+  let displayWind = document.querySelector("#wind");
+  displayWind.innerHTML = `Wind: ${currentWind}m/s`;
+  let displayIcon = document.querySelector("#icon");
+  displayIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showPosition(position) {
