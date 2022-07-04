@@ -40,12 +40,17 @@ form {
   border-radius: 50px;
   box-sizing: border-box;
   width: 350px;
-  height: 200px;
+  height: 210px;
   display: block;
   margin: 0 auto;
 }
 .temperature {
   font-size: 75px;
+}
+
+#weather-description {
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 .scale {

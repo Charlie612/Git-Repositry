@@ -77,6 +77,16 @@ function showTemperature(response) {
   let currentCity = response.data.name;
   let displayCity = document.querySelector("h1");
   displayCity.innerHTML = `${currentCity}`;
+  let currentWeatherDescription = response.data.weather[0].description;
+  //console.log(currentWeatherDescription);
+  let displayWeatherDescription = document.querySelector(
+    "#weather-description"
+  );
+  displayWeatherDescription.innerHTML = `${currentWeatherDescription}`;
+  let currentHumidity = response.data.main.humidity;
+  console.log(currentHumidity);
+  let displayCurrentHumidity = document.querySelector("#humidity");
+  displayCurrentHumidity.innerHTML = `Humidity: ${currentHumidity}%`;
 }
 
 function showPosition(position) {
