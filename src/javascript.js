@@ -48,29 +48,13 @@ let form = document.querySelector("#city-form");
 form.addEventListener("submit", search);
 
 // Feature 3
-function changeToFahrenheit(event) {
-  event.preventDefault();
-  let temp = document.querySelector("#temperature");
-  temp.innerHTML = `41`;
-}
-
-function changeToCelsius(event) {
-  event.preventDefault();
-  let temp = document.querySelector("#temperature");
-  temp.innerHTML = `5`;
-}
-
-let temperatureInfahrenheit = document.querySelector("#fahrenheit");
-temperatureInfahrenheit.addEventListener("click", changeToFahrenheit);
-
-let temperatureInDegrees = document.querySelector("#degrees-celsius");
-temperatureInDegrees.addEventListener("click", changeToCelsius);
 
 //Week 5 challenge
 
 function showTemperature(response) {
   console.log(response);
   //console.log(response.data.main.temp);
+  celsiusTemperature = response.data.main.temp;
   let currentTemperature = Math.round(response.data.main.temp);
   let displayTemperature = document.querySelector("#temperature");
   displayTemperature.innerHTML = `${currentTemperature}`;
@@ -84,7 +68,7 @@ function showTemperature(response) {
   );
   displayWeatherDescription.innerHTML = `${currentWeatherDescription}`;
   let currentHumidity = response.data.main.humidity;
-  console.log(currentHumidity);
+  //console.log(currentHumidity);
   let displayCurrentHumidity = document.querySelector("#humidity");
   displayCurrentHumidity.innerHTML = `Humidity: ${currentHumidity}%`;
   let currentWind = Math.round(response.data.wind.speed);
@@ -112,3 +96,27 @@ function getCurrentPosition() {
 }
 let button = document.querySelector("#current-location-button");
 button.addEventListener("click", getCurrentPosition);
+
+// Feature 3
+function changeToFahrenheit(event) {
+  event.preventDefault();
+  let displayFahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temp = document.querySelector("#temperature");
+  temp.innerHTML = Math.round(displayFahrenheitTemperature);
+  temperatureInDegrees.classList.remove("active");
+  temperatureInfahrenheit.classList.add("active");
+}
+
+function changeToCelsius(event) {
+  event.preventDefault();
+  let temp = document.querySelector("#temperature");
+  temp.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+let temperatureInfahrenheit = document.querySelector("#fahrenheit");
+temperatureInfahrenheit.addEventListener("click", changeToFahrenheit);
+
+let temperatureInDegrees = document.querySelector("#degrees-celsius");
+temperatureInDegrees.addEventListener("click", changeToCelsius);

@@ -66,6 +66,10 @@ form {
   top: 10px;
 }
 
+.active.scale {
+  color: black;
+}
+
 #weekly-forecast {
   font-size: 30px;
 }
