@@ -60,12 +60,6 @@ form {
   text-decoration: none;
 }
 
-.current-weather-emoji {
-  font-size: 75px;
-  position: relative;
-  top: 10px;
-}
-
 .scale.active {
   color: black;
 }
@@ -73,6 +67,14 @@ form {
 #weekly-forecast {
   font-size: 30px;
 }
+
+#icon {
+  float: left;
+  position: relative;
+  left: 20px;
+  top: 15px;
+}
+
 #daily-forecast {
   background-color: white;
   border: 2px solid blue;
@@ -82,6 +84,7 @@ form {
   font-weight: bold;
   box-shadow: 3px 3px 3px rgb(0, 0, 255, 0.4);
 }
+
 #current-location-button {
   text-align: center;
   display: block;
