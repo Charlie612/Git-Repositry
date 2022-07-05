@@ -111,6 +111,8 @@ function changeToCelsius(event) {
   event.preventDefault();
   let temp = document.querySelector("#temperature");
   temp.innerHTML = Math.round(celsiusTemperature);
+  temperatureInDegrees.classList.add("active");
+  temperatureInfahrenheit.classList.remove("active");
 }
 
 let celsiusTemperature = null;
